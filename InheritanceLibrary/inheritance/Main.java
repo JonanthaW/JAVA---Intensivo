@@ -8,6 +8,6 @@ public class Main {
         Romance romance = new Romance("Peter pan", 500, 50.0f);
 
         System.out.println("Getting books from database");
-        System.out.println(String.format("%s %s", romance.getName(), romance.getTags()));
+        System.out.println(String.format("%s %s", romance.getName(), romance.getTags())); 
     }
 }
