@@ -19,6 +19,35 @@ public class Books {
         }
         this.price = price;
     }
+    
+
+    // setter methods
+    public void setName(String name) {
+        if(name.isEmpty()) {
+            throw new IllegalArgumentException("Name cannot be null");
+        }
+        else {
+            this.name = name;
+        }
+    }
+
+    public void setPageQuantity(int pageQuantity) {
+        if(pageQuantity <= 0) {
+            throw new IllegalArgumentException("Page quantity cannot be less than or equal to 0");
+        }
+        else {
+            this.pageQuantity = pageQuantity;
+        }
+    }
+
+    public void setPrice(float price) {
+        if(price <= 0f) {
+            throw new IllegalArgumentException("Price cannot be less than or equal to 0");
+        }
+        else {
+            this.price = price;
+        }
+    }
 
     // Add getter methods if needed
     public String getName() {
